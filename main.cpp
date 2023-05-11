@@ -1,5 +1,5 @@
 #include <iostream>
-#include "NodoLectura.h"
+#include "Nodo.h"
 
 using namespace std;
 
