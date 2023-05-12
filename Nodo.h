@@ -1,44 +1,32 @@
 //
-// Created by gabriel on 11/05/23.
+// Created by agabr on 4/5/2023.
 //
 
-#ifndef TP_DOS_NODO_H
-#define TP_DOS_NODO_H
+#ifndef LISTA_NODO_H
+#define LISTA_NODO_H
 
+#include "Nodo.h"
 #include <iostream>
 using namespace std;
 
 typedef string Dato;
 
-class Nodo {
+
+class Nodo{
 private:
+    Dato dato;
     Nodo * siguiente;
-protected:
-    Dato paisGrupo;
 
 public:
-    //METODOS:
+    //constructor:
+    Nodo(Dato elemento);
 
-    //Constructor
-    //PRE:
-    //POS: inicializada el nodo con la lectura de datos
-    Nodo(Dato lineaPaises);
+    Dato obtenerElemento();
 
-    //PRE:
-    //POS: Retorna el dato PaisGrupo
-    Dato  obtenerClasificados();
+    Nodo * obtenerSiguiente();
 
-    //PRE:
-    //POS: retorna el puntero a siguiente.
-    Nodo *obtenerSiguiente();
-
-    //PRE:
-    //POS: Apunta el puntero hacia un nuevo Nodo
-    void cambiarSiguiente(Nodo * puntero);
-
+    void cambiarSiguiente (Nodo * p);
 
 };
 
-
-
-#endif //TP_DOS_NODO_H
+#endif //LISTA_NODO_H

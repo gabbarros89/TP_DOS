@@ -1,22 +1,19 @@
 //
-// Created by gabriel on 11/05/23.
+// Created by agabr on 4/5/2023.
 //
 
-#ifndef TP_DOS_LISTA_H
-#define TP_DOS_LISTA_H
-
-
+#ifndef LISTA_LISTA_H
+#define LISTA_LISTA_H
 
 #include "Nodo.h"
 
 
-class Lista {
-
+class Lista{
 private:
     //Atributos:
-    Nodo *primero; // puntero al primer nodo
+    Nodo *primero;
     int cantidad;
-    Nodo *actual; // puntero al segundo nodo
+    Nodo *actual;
 
 public:
     // Metodos:
@@ -48,6 +45,9 @@ public:
     //POS: devuelve true si actual apunta a un nodo, false sino
     bool haySiguiente();
 
+
+
+
     //PRE:
     //POS: devuelve true si no hay elementos en la lista, false si no.
     bool vacia();
@@ -71,4 +71,5 @@ private:
     Nodo *obtener_nodo(int pos);
 
 };
-#endif //TP_DOS_LISTA_H
+
+#endif //LISTA_LISTA_H

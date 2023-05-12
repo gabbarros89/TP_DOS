@@ -1,22 +1,25 @@
 //
-// Created by gabriel on 11/05/23.
+// Created by agabr on 4/5/2023.
 //
 
 #include "Nodo.h"
 
 
-Nodo::Nodo(Dato lineaPaises) {
-    paisGrupo = lineaPaises;
+
+//constructor:
+Nodo::Nodo(Dato elemento) {
+    dato = elemento;
+    siguiente = 0;
 }
 
-Dato Nodo::obtenerClasificados() {
-    return paisGrupo;
+Dato Nodo::obtenerElemento() {
+    return dato;
 }
 
-Nodo *Nodo::obtenerSiguiente() {
+Nodo * Nodo::obtenerSiguiente() {
     return siguiente;
 }
 
-void Nodo::cambiarSiguiente(Nodo *puntero) {
-    siguiente = puntero;
+void Nodo::cambiarSiguiente (Nodo * p){
+    siguiente = p; //p es un puntero al nodo
 }

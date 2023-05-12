@@ -1,11 +1,9 @@
 //
-// Created by gabriel on 11/05/23.
+// Created by agabr on 4/5/2023.
 //
 
-#include "Lista.h"
 #include <iostream>
-
-
+#include "Lista.h"
 
 Lista::Lista() {
     primero = 0;
@@ -24,7 +22,7 @@ int Lista::obtenerCantidad() {
 
 Dato Lista::consulta(int pos) {
     Nodo * aux = obtener_nodo(pos);
-    return aux->obtenerClasificados();
+    return aux->obtenerElemento();
 }
 
 void Lista::resetear() {
@@ -32,13 +30,12 @@ void Lista::resetear() {
 }
 
 Dato Lista::siguiente() {
-    Dato dato = actual->obtenerClasificados();
+    Dato dato = actual->obtenerElemento();
     actual = actual->obtenerSiguiente();
     return (dato);
 }
 
 bool Lista::haySiguiente() {
-
     return (actual != 0);
 }
 

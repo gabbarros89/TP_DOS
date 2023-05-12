@@ -9,12 +9,13 @@ using namespace std;
 
 int main() {
 
-    Lista *clasificados;
+    //Lista *clasificados;
+
+    Lista *lista = new Lista;
+
+    cargaDatosEnMemoria(lista, "/home/gabriel/Escritorio/TP_DOS/paises.txt");
 
 
-    cargaDatosEnMemoria(clasificados, RUTA_PAISES);
-
-    //std::cout << "Hello, World!" << std::endl;
-    //std:: cout << "Es hora de trabajar gabriel " << std::endl;
+    delete lista;
     return 0;
 }

@@ -19,7 +19,9 @@ void cargaDatosEnMemoria(Lista * lista, const string RUTA){
     while (getline(archivo, linea)){
         lista->alta(linea, posicion);
         posicion ++;
+        //cout << linea << endl;
     }
+
     lista->resetear();
 
     while (lista->haySiguiente()){
