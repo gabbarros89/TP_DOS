@@ -21,6 +21,12 @@ int main() {
 
     lista->ordenarNombre();
 
+    lista->resetear();
+
+    while (lista->haySiguiente()){
+        cout << lista->siguiente() << endl;
+    }
+
     delete lista;
     delete resultados;
     return 0;
