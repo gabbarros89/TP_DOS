@@ -23,8 +23,9 @@ void cargaDatosEnMemoria(Lista * lista, const string RUTA){
     }
 
     lista->resetear();
-
+/*
     while (lista->haySiguiente()){
         cout << lista->siguiente() << endl;
     }
+    */
 }

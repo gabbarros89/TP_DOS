@@ -83,3 +83,16 @@ Lista::~Lista() {
         baja(1);
     }
 }
+
+void Lista::ordenarNombre() {
+
+    for (int i = UNO; i < cantidad; i++) {
+
+        Nodo * aux = obtener_nodo(i);
+        cout << aux->obtenerElemento() << endl;
+        cout << "Direccion del nodo: " << obtener_nodo(i) << endl;
+        cout << "Direccion del siguiente (dentro del nodo): " <<obtener_nodo(i)->obtenerSiguiente() << ": " ;
+        //cout << obtener_nodo(i) << endl; ;
+    }
+
+}

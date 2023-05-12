@@ -6,7 +6,7 @@
 #define LISTA_LISTA_H
 
 #include "Nodo.h"
-
+#include "constantes.h"
 
 class Lista{
 private:
@@ -31,7 +31,6 @@ public:
     //POS: Elimina el elemento en la posicion pos
     void baja(int pos);
 
-
     //PRE: -
     //POS: devuelve el puntero actual al principio
     void resetear();
@@ -44,9 +43,6 @@ public:
     //PRE:
     //POS: devuelve true si actual apunta a un nodo, false sino
     bool haySiguiente();
-
-
-
 
     //PRE:
     //POS: devuelve true si no hay elementos en la lista, false si no.
@@ -65,6 +61,9 @@ public:
     //POS: Libera la memoria din
     ~Lista();
 
+    //PRE:
+    //POS: Ordena alfabeticamente los nodos.
+    void ordenarNombre();
 private:
     //PRE:
     //POS:

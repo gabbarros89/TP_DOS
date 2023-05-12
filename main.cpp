@@ -19,6 +19,7 @@ int main() {
 
     //cargaDatosEnMemoria(lista, "/home/gabriel/Escritorio/TP_DOS/paises.txt");
 
+    lista->ordenarNombre();
 
     delete lista;
     delete resultados;
