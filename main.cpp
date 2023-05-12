@@ -1,12 +1,21 @@
 #include <iostream>
-#include "NodoLectura.h"
+#include "Nodo.h"
+#include "Lista.h"
+#include "constantes.h"
+#include "LecturaArchivos.h"
+
 
 using namespace std;
 
-
-
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std:: cout << "Es hora de trabajar gabriel " << std::endl;
+
+    //Lista *clasificados;
+
+    Lista *lista = new Lista;
+
+    cargaDatosEnMemoria(lista, "/home/gabriel/Escritorio/TP_DOS/paises.txt");
+
+
+    delete lista;
     return 0;
 }
