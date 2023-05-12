@@ -12,10 +12,15 @@ int main() {
     //Lista *clasificados;
 
     Lista *lista = new Lista;
+    cargaDatosEnMemoria(lista, RUTA_PAISES);
 
-    cargaDatosEnMemoria(lista, "/home/gabriel/Escritorio/TP_DOS/paises.txt");
+    Lista *resultados = new Lista;
+    cargaDatosEnMemoria(resultados, RUTA_RESULTADOS);
+
+    //cargaDatosEnMemoria(lista, "/home/gabriel/Escritorio/TP_DOS/paises.txt");
 
 
     delete lista;
+    delete resultados;
     return 0;
 }

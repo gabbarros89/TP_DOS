@@ -10,7 +10,7 @@
 using namespace std;
 
 //ARCHIVOS:
-const::string RUTA_PAISES = "https://github.com/gabbarros89/TP_DOS/blob/eb131e47dc4ed5f8289795750b3aac1ba58e80dc/paises.txt";
+const::string RUTA_PAISES = "/home/gabriel/Escritorio/TP_DOS/paises.txt";
 const::string RUTA_RESULTADOS = "/home/gabriel/Escritorio/TP_DOS/resultados.csv";
 
 //NUMEROS:

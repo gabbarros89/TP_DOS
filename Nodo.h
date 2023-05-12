@@ -15,6 +15,8 @@ typedef string Dato;
 class Nodo{
 private:
     Dato dato;
+
+protected:
     Nodo * siguiente;
 
 public:
