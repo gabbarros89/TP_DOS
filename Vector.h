@@ -44,5 +44,17 @@ public:
     ~Vector();
 };
 
+template<typename generico>
+void Vector<generico>::expandirVector() {
+    tamanio += 2;
+    generico *auxiliar = new generico[tamanio];
+    for (int i = 0; i < tamanio; i++){
+        auxiliar[i] = elementos[i];
+        tamanio++;
+    }
+    delete [] elementos;
+    elementos = auxiliar;
+}
+
 
 #endif //TP_DOS_VECTOR_H
