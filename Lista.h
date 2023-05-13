@@ -63,7 +63,7 @@ public:
 
     //PRE:
     //POS: Ordena alfabeticamente los nodos.
-    void ordenarNombre();
+    void ordenar_z_a_Nombre();
 private:
     //PRE:
     //POS:

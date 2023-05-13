@@ -19,12 +19,17 @@ int main() {
 
     //cargaDatosEnMemoria(lista, "/home/gabriel/Escritorio/TP_DOS/paises.txt");
 
-    lista->ordenarNombre();
+    lista->ordenar_z_a_Nombre();
 
     lista->resetear();
 
     while (lista->haySiguiente()){
         cout << lista->siguiente() << endl;
+    }
+
+    resultados->resetear();
+    while (resultados->haySiguiente()){
+        cout << resultados->siguiente() << endl;
     }
 
     delete lista;

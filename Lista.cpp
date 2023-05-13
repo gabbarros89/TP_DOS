@@ -85,14 +85,13 @@ Lista::~Lista() {
 }
 
 
-void Lista::ordenarNombre() {
+void Lista::ordenar_z_a_Nombre() {
     for (int i = 1; i <= cantidad; i++){
         Nodo * aux = obtener_nodo(i);
         Dato pais = aux->obtenerElemento();
 
         int j = i-1;
-        cout << "Iteracion i: " << i << endl;
-        while (j >= 1 && obtener_nodo(j)->obtenerElemento() > pais ){
+        while (j >= 1 && obtener_nodo(j)->obtenerElemento() < pais ){
             Nodo * nodo_j = obtener_nodo(j);
             if (j == 1){
                 Nodo * nodo_j_mas_dos = obtener_nodo(j+2);
@@ -102,7 +101,6 @@ void Lista::ordenarNombre() {
                 nodo_j->cambiarSiguiente(nodo_j_mas_dos);
             }
             else if(j == cantidad-1){
-                    //cout << "Ultima iteracion valor de i: " << i << "Valor de j: " << j  << endl;
                     Nodo * nodo_j_mas_uno = obtener_nodo(j+1);
                     Nodo * nodo_j_menos_uno = obtener_nodo(j-1);
                     nodo_j_menos_uno->cambiarSiguiente(nodo_j_mas_uno);
@@ -120,10 +118,6 @@ void Lista::ordenarNombre() {
 
             j--;
         }
-
-        //std::cout << "nodo: " << aux << std::endl;
-        //std::cout << aux->obtenerElemento() << std::endl;
-        //std::cout << "nodo siguiente:  " << aux->obtenerSiguiente() << std::endl;
 
     }
 
