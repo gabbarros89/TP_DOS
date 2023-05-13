@@ -2,24 +2,24 @@
 // Created by agabr on 4/5/2023.
 //
 
-#include "Nodo.h"
+#include "nodo.h"
 
 
 
 //constructor:
-Nodo::Nodo(Dato elemento) {
+nodo::nodo(Dato elemento) {
     dato = elemento;
     siguiente = 0;
 }
 
-Dato Nodo::obtenerElemento() {
+Dato nodo::obtenerElemento() {
     return dato;
 }
 
-Nodo * Nodo::obtenerSiguiente() {
+nodo * nodo::obtenerSiguiente() {
     return siguiente;
 }
 
-void Nodo::cambiarSiguiente (Nodo * p){
+void nodo::cambiarSiguiente (nodo * p){
     siguiente = p; //p es un puntero al nodo
 }

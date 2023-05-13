@@ -5,29 +5,29 @@
 #ifndef LISTA_NODO_H
 #define LISTA_NODO_H
 
-#include "Nodo.h"
+#include "nodo.h"
 #include <iostream>
 using namespace std;
 
 typedef string Dato;
 
 
-class Nodo{
+class nodo{
 private:
     Dato dato;
 
 protected:
-    Nodo * siguiente;
+    nodo * siguiente;
 
 public:
     //constructor:
-    Nodo(Dato elemento);
+    nodo(Dato elemento);
 
     Dato obtenerElemento();
 
-    Nodo * obtenerSiguiente();
+    nodo * obtenerSiguiente();
 
-    void cambiarSiguiente (Nodo * p);
+    void cambiarSiguiente (nodo * p);
 
 };
 

@@ -5,15 +5,15 @@
 #ifndef LISTA_LISTA_H
 #define LISTA_LISTA_H
 
-#include "Nodo.h"
+#include "nodo.h"
 #include "constantes.h"
 
 class Lista{
 private:
     //Atributos:
-    Nodo *primero;
+    nodo *primero;
     int cantidad;
-    Nodo *actual;
+    nodo *actual;
 
 public:
     // Metodos:
@@ -67,7 +67,7 @@ public:
 private:
     //PRE:
     //POS:
-    Nodo *obtener_nodo(int pos);
+    nodo *obtener_nodo(int pos);
 
 };
 
